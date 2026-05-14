@@ -191,7 +191,7 @@ def generate_pdf(user_id, user_name):
 
     # Section: Past
     story.append(Paragraph("🧳 ОСТАНОВКА 1: ПРОШЛОЕ", section_style))
-    story.append(Paragraph("<i>"Багаж наследия"</i>", body_style))
+    story.append(Paragraph('<i>"Багаж наследия"</i>', body_style))
     story.append(Spacer(1, 0.5*cm))
 
     # Section: Present
