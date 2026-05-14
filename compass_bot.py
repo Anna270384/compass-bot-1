@@ -196,17 +196,17 @@ def generate_pdf(user_id, user_name):
 
     # Section: Present
     story.append(Paragraph("⚓ ОСТАНОВКА 2: НАСТОЯЩЕЕ", section_style))
-    story.append(Paragraph("<i>"Диагностика корабля"</i>", body_style))
+    story.append(Paragraph('<i>"Диагностика корабля"</i>', body_style))
     story.append(Spacer(1, 0.5*cm))
 
     # Section: Future
     story.append(Paragraph("🗺️ ОСТАНОВКА 3: БУДУЩЕЕ", section_style))
-    story.append(Paragraph("<i>"Прорисовка карты"</i>", body_style))
+    story.append(Paragraph('<i>"Прорисовка карты"</i>', body_style))
     story.append(Spacer(1, 0.5*cm))
 
     # Section: Action
     story.append(Paragraph("🎯 ОСТАНОВКА 4: ДЕЙСТВИЕ", section_style))
-    story.append(Paragraph("<i>"Первый шаг"</i>", body_style))
+    story.append(Paragraph('<i>"Первый шаг"</i>', body_style))
     story.append(Spacer(1, 0.5*cm))
 
     story.append(PageBreak())
