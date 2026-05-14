@@ -555,8 +555,8 @@ async def stop2_task3_response(update: Update, context: ContextTypes.DEFAULT_TYP
     add_entry(user_id, "Колесо Баланса", wheel_text.replace("<b>", "").replace("</b>", ""))
 
     wheel_text += '\n<b>Задание 4: "Мои демоны и мои ангелы"</b>\n\n'
-    wheel_text += "Напишите 3-5 главных страхов или убеждений, которые вас сдерживают ("Демоны"):\n"
-    wheel_text += "<i>Примеры: "Уже поздно", "У меня не получится", "Что скажут люди?"</i>"
+    wheel_text += 'Напишите 3-5 главных страхов или убеждений, которые вас сдерживают ("Демоны"):\n'
+    wheel_text += '<i>Примеры: "Уже поздно", "У меня не получится", "Что скажут люди?"</i>'
 
     await update.message.reply_text(wheel_text, parse_mode="HTML")
     return STOP2_TASK4_DEMONS
