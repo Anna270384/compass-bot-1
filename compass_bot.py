@@ -224,8 +224,7 @@ def generate_pdf(user_id, user_name):
         # Clean content for PDF (replace newlines with <br/>)
         content = entry["content"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
         content = content.replace("\n", "<br/>")
-        content = content.replace("
-", "<br/>")
+        content = content.replace("", "<br/>")
 
         story.append(Paragraph(content, body_style))
         story.append(Spacer(1, 0.3*cm))
